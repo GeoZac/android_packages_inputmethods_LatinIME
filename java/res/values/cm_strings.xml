@@ -31,4 +31,5 @@ disposition rather than other common dispositions for Latin languages. [CHAR LIM
 
     <!-- Title of the settings for setting keyboard height -->
     <string name="prefs_keyboard_height_scale">Keyboard height scale</string>
+    <string name="show_number_row">Show separate number row</string>
 </resources>
