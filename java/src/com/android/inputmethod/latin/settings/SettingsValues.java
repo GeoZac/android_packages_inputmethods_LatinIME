@@ -89,6 +89,7 @@ public class SettingsValues {
     // Use split layout for keyboard.
     public final boolean mIsSplitKeyboardEnabled;
     public final int mScreenMetrics;
+    public final boolean mShowNumberRow;
 
     // From the input box
     @Nonnull
@@ -223,6 +224,7 @@ public class SettingsValues {
             new TargetPackageInfoGetterTask(context, mAppWorkarounds)
                     .execute(mInputAttributes.mTargetApplicationPackageName);
         }
+        mShowNumberRow = Settings.readShowNumberRow(prefs);
     }
 
     public boolean isMetricsLoggingEnabled() {
